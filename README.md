@@ -94,6 +94,7 @@ The *dpDomObj.json* file holds configuration for the different objects.  In look
 The configuraiton holds objects by DataPower type.  Each DataPower type holds a dictionary of parent objects with four fields.
 
 These are the field defintions:
+
 | Field Name | Description |
 | ---------- | ----------- |
 | **domain** | Name of the domain to which the object belongs |
