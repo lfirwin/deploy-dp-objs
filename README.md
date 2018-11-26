@@ -34,15 +34,15 @@ Configuration files allow for objects and files to be unique across environments
 Specific values that change from environment to environment are stored in the environment JSON file.
 
 These are the field defintions:
-| Field Name | Description |
-| ---------- | ----------- |
-| **environment** | Name of the environment |
-| **description** | Description of the environment (optional) |
-| **dpgateways** | Dictionary of DataPower devices that define this environment |
-| __*dp gateway name*__ | The name of the DataPower Gateway |
-| **hosts** | List of DataPower hosts with hostname and IP |
-| **restPort** | Port enabled for DataPower REST Management |
-| **variables** | Dictionary whose key/values will be used in templating files and objects |
+Field Name | Description
+---------- | -----------
+**environment** | Name of the environment
+**description** | Description of the environment (optional)
+**dpgateways** | Dictionary of DataPower devices that define this environment
+__*dp gateway name*__ | The name of the DataPower Gateway
+**hosts** | List of DataPower hosts with hostname and IP
+**restPort** | Port enabled for DataPower REST Management
+**variables** | Dictionary whose key/values will be used in templating files and objects
 
 
 Example of an environment configuration file:
