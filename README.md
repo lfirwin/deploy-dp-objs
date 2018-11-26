@@ -34,6 +34,7 @@ Configuration files allow for objects and files to be unique across environments
 Specific values that change from environment to environment are stored in the environment JSON file.
 
 These are the field defintions:
+
 Field Name | Description
 ---------- | -----------
 **environment** | Name of the environment
