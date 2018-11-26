@@ -1,0 +1,1 @@
+This directory holds certificate files in PEM format without bag attributes.

@@ -1,0 +1,38 @@
+{  
+    "environment":"ENV1",
+    "description":"DP Gateway Customization Variables for ENV1",
+    "dpgateways": {  
+       "DP Security Gateway": {  
+          "hosts": [
+             ["dpsg.hostname.com", "1.2.3.4"]
+          ],
+          "restPort": 5554
+       },
+       "DP ODR": {  
+          "hosts": [
+             ["dpodr.hostname.com", "5.6.7.8"]
+          ],
+          "restPort": 5554
+       }
+    },
+    "variables": {
+       "ssl_key_passphrase": "cGFzc3dvcmQ=",
+       "certs": {
+          "sg_ssl_key": ["cert", "key.pem"],
+          "sg_ssl_cert": ["cert", "cert.pem"],
+       },
+       "controller": "controller.hostname.com",
+       "controller_port": 9443,
+       "controller_password": "cGFzc3dvcmQ=",
+       "odr_ssl_key_passphrase": "cGFzc3dvcmQ=",
+       "log_tgt_host": "myvm.hostname.com",
+       "dp_sg_host": "apip-env.hostname.com",
+       "api_port": ":9447",
+       "f5_cidr": {
+          "allow": [
+             "1.2.3.20/29"
+          ]
+       },
+       "odr_conn_group": "ODR_CG"
+    }
+ }

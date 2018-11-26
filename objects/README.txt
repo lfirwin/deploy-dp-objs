@@ -1,0 +1,1 @@
+This directory stores objects exported from a DataPower domain.  Objects are stored in sub-directories based on the DataPower type.

@@ -1,0 +1,29 @@
+{
+   "DP Gateway": {
+      "mpg": {
+         "domain": "{{env}}",
+         "name": "MPG-Routing",
+         "type": "MultiProtocolGateway",
+         "parms": {
+            "f5-acl.AccessControlEntry": {{f5_cidr|acllist}},
+            "fsh-https-443.LocalAddress": "<<hostIP>>",
+            "mpg-routing_multiprotocolgateway.BackendUrl": "{{mpg_routing_backendurl}}",
+            "ssl-alias.Password": "{{ssl_key_passphrase|b64decode}}",
+            "ssl-key.Filename": "{{certs.sg_ssl_key[0]}}:///{{certs.sg_ssl_key[1]}}",
+            "ssl-cert.Filename": "{{certs.sg_ssl_cert[0]}}:///{{certs.sg_ssl_cert[1]}}"
+         }
+      },
+      "hostalias": {
+         "domain": "default",
+         "name": "{{dp_host}}",
+         "type": "HostAlias",
+         "parms": {
+            "hostname.name": "{{dp_host}}",
+            "hostname.IPAddress": "<<hostIP>>"
+         }
+      }
+   }
+}
+
+
+
