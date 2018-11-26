@@ -1,7 +1,7 @@
 # Deploy DataPower Objects
 
 ## Overview
-This project gives a framework from which files and objects can be deployed to a target DataPower doamin, and exported from a source DataPower domain.  Files can be any file needed to support an implementation, including SSL certificates.  Objects include any object needed for the implementation/solution.
+This project gives a framework from which files and objects can be deployed to a target DataPower domain, and exported from a source DataPower domain.  Files can be any file needed to support an implementation, including SSL certificates.  Objects include any object needed for the implementation/solution.
 
 The framework uses the DataPower REST API instead of the usual SOMA interface, and as such all objects are stored and manipulated as JSON files.
 
